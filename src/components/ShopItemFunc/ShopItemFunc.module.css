@@ -1,0 +1,45 @@
+.mainContent {
+  padding:50px 46px 25px 20px;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #222;
+  width: 100%;
+  height: 100%;
+  -webkit-flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
+}
+
+.highlightWindow {
+  height: 550px;
+  width: 400px;
+  background: #ccc;
+  background: url('assets/item-blue.jpg');
+  background-size: cover;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  position:relative;
+  background-position:center top;
+}
+
+.highlightWindow.mobile {
+  display:none;
+}
+
+.highlightOverlay {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  opacity:0;
+  filter: alpha(opacity=0);
+  background:url('assets/item-black.jpg');
+  background-size:cover;
+  -webkit-transition:opacity .4s ease;
+  transition:opacity .4s ease;
+  background-position:center top;
+}
